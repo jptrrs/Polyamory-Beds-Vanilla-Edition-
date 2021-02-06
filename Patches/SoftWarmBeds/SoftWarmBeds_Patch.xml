@@ -250,6 +250,40 @@
             <tickerType>Normal</tickerType>
           </value>
         </li>
+	      
+	<!--Peserving Menu Icon-->
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName = "TripleBed" or defName = "QuadBed" or defName = "TripleRoyalBed" or defName = "QuadRoyalBed" or defName="PentaRoyalBed"]</xpath>
+          <value>
+            <uiIconPath/>
+          </value>
+        </li>
+        <li Class="SoftWarmBeds.PatchOperationCopy">
+          <xpath>/Defs/ThingDef[defName = "TripleBed"]/graphicData/texPath</xpath>
+          <toXpath>/Defs/ThingDef[defName = "TripleBed"]/uiIconPath</toXpath>
+          <append>_south</append>
+        </li>
+        <li Class="SoftWarmBeds.PatchOperationCopy">
+          <xpath>/Defs/ThingDef[defName = "QuadBed"]/graphicData/texPath</xpath>
+          <toXpath>/Defs/ThingDef[defName = "QuadBed"]/uiIconPath</toXpath>
+          <append>_south</append>
+        </li>
+        <li Class="SoftWarmBeds.PatchOperationCopy">
+          <xpath>/Defs/ThingDef[defName = "TripleRoyalBed"]/graphicData/texPath</xpath>
+          <toXpath>/Defs/ThingDef[defName = "TripleRoyalBed"]/uiIconPath</toXpath>
+          <append>_south</append>
+        </li>
+        <li Class="SoftWarmBeds.PatchOperationCopy">
+          <xpath>/Defs/ThingDef[defName = "QuadRoyalBed"]/graphicData/texPath</xpath>
+          <toXpath>/Defs/ThingDef[defName = "QuadRoyalBed"]/uiIconPath</toXpath>
+          <append>_south</append>
+        </li>
+        <li Class="SoftWarmBeds.PatchOperationCopy">
+          <xpath>/Defs/ThingDef[defName = "PentaRoyalBed"]/graphicData/texPath</xpath>
+          <toXpath>/Defs/ThingDef[defName = "PentaRoyalBed"]/uiIconPath</toXpath>
+          <append>_south</append>
+        </li>
+	      
         <!--Graphic Modifications-->
         <li Class="PatchOperationReplace">
           <xpath>Defs/ThingDef[defName="TripleBed"]/graphicData/texPath</xpath>
